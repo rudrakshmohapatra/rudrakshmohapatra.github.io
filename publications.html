@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rudraksh Mohapatra</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #000;
+      background-color: #fff;
+    }
+
+    a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #8C1515;
+    }
+
+    .site-header {
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0;
+    margin-bottom: 32px;
+    }
+
+
+    .nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 24px;
+    }
+
+
+    .nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    }
+
+
+    .nav a:hover {
+    font-weight: bold;
+    color: #8C1515
+    }
+
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      gap: 40px;
+    }
+
+    /* Left column */
+    .sidebar {
+      width: 250px;
+      flex-shrink: 0;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%; /* can be 50% for circle*/
+      object-fit: cover;
+      border: 3px solid #8C1515;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .sidebar h1 {
+      font-size: 22px;
+      margin: 0 0 10px 0;
+      color: #8C1515;
+    }
+
+    .sidebar p {
+      margin: 4px 0;
+      font-size: 14px;
+    }
+
+    .links {
+      margin-top: 16px;
+    }
+
+    .links a {
+      display: block;
+      text-decoration: none;
+      color: #8C1515;
+      font-size: 14px;
+      margin: 6px 0;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .contact {
+    margin-top: 24px;
+    }
+
+
+    .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    margin: 10px 0;
+    }
+
+
+    .contact-item:hover {
+    text-decoration: underline;
+    }
+
+
+    .icon {
+    width: 22px;
+    text-align: center;
+    font-size: 18px;
+    }
+
+    .contact-item i {
+    width: 20px;
+    text-align: center;
+    font-size: 16px;
+    }
+
+
+    /* Right column */
+    .content {
+      flex: 1;
+    }
+
+    .content h2 {
+      color: #8C1515;
+      margin-top: 0;
+      font-size: 24px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid  #8C1515;
+      margin-bottom: 20px;
+    }
+
+    .content h3 {
+      color: #8C1515;
+      margin-top: 0;
+      font-size: 17px;
+      
+    }
+
+    .content p {
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .pub-list {
+    padding-left: 20px;
+    }
+
+    .publication {
+    margin-bottom: 26px;
+    }
+
+    .pub-title {
+    margin: 0;
+    font-size: 15px;
+    }
+
+    .pub-title a {
+    text-decoration: none;
+    color: #000;
+    }
+
+    .pub-title a:hover {
+    text-decoration: underline;
+    }
+
+    .pub-authors,
+    .pub-venue,
+    .pub-links {
+    margin: 2px 0;
+    font-size: 14px;
+    }
+
+    .pub-links a {
+    text-decoration: none;
+    color: #8C1515;
+    }
+
+    .pub-links a:hover {
+    text-decoration: underline;
+    }
+
+
+
+    /* Simple responsiveness */
+    @media (max-width: 700px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+        <a href="Website.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="docs/resume_website.pdf" target="_blank">CV</a>
+        </nav>
+    </header>
+  <div class="container">
+    <!-- Left column -->
+    <aside class="sidebar">
+      <img src="images/photo2.jpeg" alt="Profile photo" class="profile-pic" />
+
+      <h1>Rudraksh Mohapatra</h1>
+      <!--<p><strong>University:</strong> Stanford University</p>
+      <p><strong>Major:</strong>Electrical Engineering</p>
+
+       <div class="links">
+        <a href="cv.pdf">Curriculum Vitae</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+      </div> -->
+
+      <div class="contact">
+        <a href="mailto:rudraksh@stanford.edu" class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      
+        <a href="https://www.linkedin.com/in/rudrakshmohapatra" class="contact-item">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      
+        <a href="https://github.com/rudraksh-art" class="contact-item">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      
+        <a href="http://scholar.google.com/citations?user=BXS-33QAAAAJ" class="contact-item">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Google Scholar</span>
+        </a>
+      </div>
+      
+    </aside>
+
+    <!-- Right column -->
+    <main class="content">
+        <h2>Publications</h2>
+
+        <ol class="pub-list">
+        
+          <li class="publication">
+            <p class="pub-title">
+              <a href="https://scholar.google.com/scholar?q=Landslide+Susceptibility+modelling+Himachal+Pradesh+Mohapatra"
+                 target="_blank">
+                Landslide Susceptibility modelling in a part of Himachal Pradesh, India:
+                An integrated method based on machine learning and geospatial techniques
+              </a>
+            </p>
+            <p class="pub-authors">
+              Mohapatra, R. (2022)
+            </p>
+            <p class="pub-venue">
+              <em>Nova Geodesia</em>
+            </p>
+            <p class="pub-links">
+              <a href="https://doi.org/10.55779/ng3163" target="_blank">DOI</a>
+            </p>
+          </li>
+        
+          <li class="publication">
+            <p class="pub-title">
+              <a href="https://scholar.google.com/scholar?q=Revised+Universal+Soil+Loss+Equation+Mohapatra"
+                 target="_blank">
+                Application of revised universal soil loss equation model for assessment
+                of soil erosion and prioritization of ravine infested sub basins of a
+                semi-arid river system in India
+              </a>
+            </p>
+            <p class="pub-authors">
+              Mohapatra, R. (2022)
+            </p>
+            <p class="pub-venue">
+              <em>Modeling Earth Systems and Environment</em>, Springer Nature
+            </p>
+            <p class="pub-links">
+              <a href="https://doi.org/10.1007/s40808-022-01388-5" target="_blank">DOI</a>
+            </p>
+          </li>
+        
+          <li class="publication">
+            <p class="pub-title">
+              <a href="https://scholar.google.com/scholar?q=Hydrological+Environment+Prospects+Semi-Arid+Gwalior+Mohapatra"
+                 target="_blank">
+                Hydrological Environment and Prospects of a Semi-Arid Region:
+                A Case Study of Gwalior, India
+              </a>
+            </p>
+            <p class="pub-authors">
+              Mohapatra, R. (2021)
+            </p>
+            <p class="pub-venue">
+              <em>SSRN E-Journal</em>, Elsevier
+            </p>
+            <p class="pub-links">
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3829989"
+                 target="_blank">SSRN</a>
+            </p>
+          </li>
+        
+        </ol>
+        
+    </main>
+  </div>
+</body>
+</html>
