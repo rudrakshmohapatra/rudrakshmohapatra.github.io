@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rudraksh Mohapatra</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #000;
+      background-color: #fff;
+    }
+
+    a{
+    font-weight: bold;
+    text-decoration: none;
+    }
+
+    .site-header {
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0;
+    margin-bottom: 32px;
+    }
+
+
+    .nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 24px;
+    }
+
+
+    .nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    }
+
+
+    .nav a:hover {
+    font-weight: bold;
+    color: #8C1515
+    }
+
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      gap: 40px;
+    }
+
+    /* Left column */
+    .sidebar {
+      width: 250px;
+      flex-shrink: 0;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%; /* can be 50% for circle*/
+      object-fit: cover;
+      border: 3px solid #8C1515;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .sidebar h1 {
+      font-size: 22px;
+      margin: 0 0 10px 0;
+      color: #8C1515;
+    }
+
+    .sidebar p {
+      margin: 4px 0;
+      font-size: 14px;
+    }
+
+    .links {
+      margin-top: 16px;
+    }
+
+    .links a {
+      display: block;
+      text-decoration: none;
+      color: #8C1515;
+      font-size: 14px;
+      margin: 6px 0;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .contact {
+    margin-top: 24px;
+    }
+
+
+    .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    margin: 10px 0;
+    }
+
+
+    .contact-item:hover {
+    text-decoration: underline;
+    }
+
+
+    .icon {
+    width: 22px;
+    text-align: center;
+    font-size: 18px;
+    }
+
+    .contact-item i {
+    width: 20px;
+    text-align: center;
+    font-size: 16px;
+    }
+
+
+    /* Right column */
+    .content {
+      flex: 1;
+    }
+
+    .content h2 {
+      color: #8C1515;
+      margin-top: 0;
+      font-size: 24px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid  #8C1515;
+      margin-bottom: 20px;
+    }
+
+    .content h3 {
+      color: #8C1515;
+      margin-top: 0;
+      font-size: 17px;
+      
+    }
+
+    .content p {
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    a {
+        color: #8C1515;
+    }
+
+    /* Simple responsiveness */
+    @media (max-width: 700px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+        <a href="Website.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="docs/resume_website.pdf" target="_blank">CV</a>
+        </nav>
+    </header>
+  <div class="container">
+    <!-- Left column -->
+    <aside class="sidebar">
+      <img src="images/photo2.jpeg" alt="Profile photo" class="profile-pic" />
+
+      <h1>Rudraksh Mohapatra</h1>
+      <!--<p><strong>University:</strong> Stanford University</p>
+      <p><strong>Major:</strong>Electrical Engineering</p>
+
+       <div class="links">
+        <a href="cv.pdf">Curriculum Vitae</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+      </div> -->
+
+      <div class="contact">
+        <a href="mailto:rudraksh@stanford.edu" class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      
+        <a href="https://www.linkedin.com/in/rudrakshmohapatra" class="contact-item">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      
+        <a href="https://github.com/rudraksh-art" class="contact-item">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      
+        <a href="http://scholar.google.com/citations?user=BXS-33QAAAAJ" class="contact-item">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Google Scholar</span>
+        </a>
+      </div>
+      
+    </aside>
+
+    <!-- Right column -->
+    <main class="content">
+      <h2>About</h2>
+      <p>
+        I am a third year undergraduate majoring in  Electrical Engineering at Stanford University, with a minor in Mathematics.
+        My academic interests lie in embedded systems and 3d reconstruction due to their interdisciplinary nature and applications based approach.
+        
+      Outside of academics, I love playing badminton, acrylic painting, and taking walks across campus!</p>
+
+      <h2>Highlighted Research</h2>
+      
+      <p>
+        At Stanford, I am involved in research at the <a href="https://s4lab.stanford.edu/" style = "color: #8C1515; font-weight: bold">Stanford Smart Sensing (S4) Lab</a> and 
+        the <a href = "https://navlab.stanford.edu/" style = "color: #8C1515; font-weight: bold">Navigation and Autonomous Vehicles (NAV) Lab</a>. 
+        My work here has focused on utilizing Synthetic Aperture Radar for passive backscatter communication and 3D Gaussian Splatting for plant segmentation. You can find more
+        details about my research here: <a href = "projects.html" style = "color: #8C1515; font-weight: bold">Projects</a>
+      </p>
+      <p><strong style = "color: #8C1515">Synthetic Aperture Radar for Passive Backscatter Communication</strong><br>
+      I implemented a processing pipeline that takes L0-RAW Sentinel-1 data and breaks it into several sublooks. The amplitude of a 
+        modulating corner relfector allows us to send bits through the received backscatter by the satellite. My work involved automating the 
+        sublook generation process, verifying amplitude stability and calculating the radar cross section from the raw data itself. This work 
+        allowed us to perform faster deployments and testing of our system. 
+      </p>
+
+      <p><strong style = "color: #8C1515">Improving Plant Segmentation in 3D Scenes using Gaussian Splatting and Clustering</strong> <br>
+      I developed optimization algorithms that benchmark optimizers that use Gaussian Splatting to better understand how the software interprets geometry and color in a scene. 
+        This allowed me to understand the root causes of issues such as glare, which are a crucial weakness in most 3d reconstructions. 
+        To improve scene segmentation, I implemented density based clustering algorithms (DBSCAN, HDBSCAN, OPTICS).  The process was optimized by downsampling
+        techniques in order to train the machine learning algorithms faster. The results of this work can be applied to any scene segmentation task.
+        
+      </p>
+    </main>
+  </div>
+</body>
+</html>
