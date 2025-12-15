@@ -18,7 +18,6 @@
     a{
     font-weight: bold;
     text-decoration: none;
-    color: #8C1515;
     }
 
     .site-header {
@@ -161,45 +160,9 @@
       font-size: 15px;
     }
 
-    .pub-list {
-    padding-left: 20px;
+    a {
+        color: #8C1515;
     }
-
-    .publication {
-    margin-bottom: 26px;
-    }
-
-    .pub-title {
-    margin: 0;
-    font-size: 15px;
-    }
-
-    .pub-title a {
-    text-decoration: none;
-    color: #000;
-    }
-
-    .pub-title a:hover {
-    text-decoration: underline;
-    }
-
-    .pub-authors,
-    .pub-venue,
-    .pub-links {
-    margin: 2px 0;
-    font-size: 14px;
-    }
-
-    .pub-links a {
-    text-decoration: none;
-    color: #8C1515;
-    }
-
-    .pub-links a:hover {
-    text-decoration: underline;
-    }
-
-
 
     /* Simple responsiveness */
     @media (max-width: 700px) {
@@ -263,71 +226,35 @@
 
     <!-- Right column -->
     <main class="content">
-        <h2>Publications</h2>
+      <h2>About</h2>
+      <p>
+        I am a third year undergraduate majoring in  Electrical Engineering at Stanford University, with a minor in Mathematics.
+        My academic interests lie in embedded systems and 3d reconstruction due to their interdisciplinary nature and applications based approach.
+        
+      Outside of academics, I love playing badminton, acrylic painting, and taking walks across campus!</p>
 
-        <ol class="pub-list">
+      <h2>Highlighted Research</h2>
+      
+      <p>
+        At Stanford, I am involved in research at the <a href="https://s4lab.stanford.edu/" style = "color: #8C1515; font-weight: bold">Stanford Smart Sensing (S4) Lab</a> and 
+        the <a href = "https://navlab.stanford.edu/" style = "color: #8C1515; font-weight: bold">Navigation and Autonomous Vehicles (NAV) Lab</a>. 
+        My work here has focused on utilizing Synthetic Aperture Radar for passive backscatter communication and 3D Gaussian Splatting for plant segmentation. You can find more
+        details about my research here: <a href = "projects.html" style = "color: #8C1515; font-weight: bold">Projects</a>
+      </p>
+      <p><strong style = "color: #8C1515">Synthetic Aperture Radar for Passive Backscatter Communication</strong><br>
+      I implemented a processing pipeline that takes L0-RAW Sentinel-1 data and breaks it into several sublooks. The amplitude of a 
+        modulating corner relfector allows us to send bits through the received backscatter by the satellite. My work involved automating the 
+        sublook generation process, verifying amplitude stability and calculating the radar cross section from the raw data itself. This work 
+        allowed us to perform faster deployments and testing of our system. 
+      </p>
+
+      <p><strong style = "color: #8C1515">Improving Plant Segmentation in 3D Scenes using Gaussian Splatting and Clustering</strong> <br>
+      I developed optimization algorithms that benchmark optimizers that use Gaussian Splatting to better understand how the software interprets geometry and color in a scene. 
+        This allowed me to understand the root causes of issues such as glare, which are a crucial weakness in most 3d reconstructions. 
+        To improve scene segmentation, I implemented density based clustering algorithms (DBSCAN, HDBSCAN, OPTICS).  The process was optimized by downsampling
+        techniques in order to train the machine learning algorithms faster. The results of this work can be applied to any scene segmentation task.
         
-          <li class="publication">
-            <p class="pub-title">
-              <a href="https://scholar.google.com/scholar?q=Landslide+Susceptibility+modelling+Himachal+Pradesh+Mohapatra"
-                 target="_blank">
-                Landslide Susceptibility modelling in a part of Himachal Pradesh, India:
-                An integrated method based on machine learning and geospatial techniques
-              </a>
-            </p>
-            <p class="pub-authors">
-              Mohapatra, R. (2022)
-            </p>
-            <p class="pub-venue">
-              <em>Nova Geodesia</em>
-            </p>
-            <p class="pub-links">
-              <a href="https://doi.org/10.55779/ng3163" target="_blank">DOI</a>
-            </p>
-          </li>
-        
-          <li class="publication">
-            <p class="pub-title">
-              <a href="https://scholar.google.com/scholar?q=Revised+Universal+Soil+Loss+Equation+Mohapatra"
-                 target="_blank">
-                Application of revised universal soil loss equation model for assessment
-                of soil erosion and prioritization of ravine infested sub basins of a
-                semi-arid river system in India
-              </a>
-            </p>
-            <p class="pub-authors">
-              Mohapatra, R. (2022)
-            </p>
-            <p class="pub-venue">
-              <em>Modeling Earth Systems and Environment</em>, Springer Nature
-            </p>
-            <p class="pub-links">
-              <a href="https://doi.org/10.1007/s40808-022-01388-5" target="_blank">DOI</a>
-            </p>
-          </li>
-        
-          <li class="publication">
-            <p class="pub-title">
-              <a href="https://scholar.google.com/scholar?q=Hydrological+Environment+Prospects+Semi-Arid+Gwalior+Mohapatra"
-                 target="_blank">
-                Hydrological Environment and Prospects of a Semi-Arid Region:
-                A Case Study of Gwalior, India
-              </a>
-            </p>
-            <p class="pub-authors">
-              Mohapatra, R. (2021)
-            </p>
-            <p class="pub-venue">
-              <em>SSRN E-Journal</em>, Elsevier
-            </p>
-            <p class="pub-links">
-              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3829989"
-                 target="_blank">SSRN</a>
-            </p>
-          </li>
-        
-        </ol>
-        
+      </p>
     </main>
   </div>
 </body>
