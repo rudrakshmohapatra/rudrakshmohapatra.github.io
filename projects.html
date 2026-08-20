@@ -1,311 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rudraksh Mohapatra</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #000;
-      background-color: #fff;
-    }
+  <title>Projects — Rudraksh Mohapatra</title>
+  <meta name="description" content="Hardware and signal processing projects by Rudraksh Mohapatra: capacitive accelerometer, FPGA wavetable synthesizer, AC to DC converter." />
 
-    a{
-    font-weight: bold;
-    text-decoration: none;
-    }
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    .site-header {
-    border-bottom: 1px solid #ddd;
-    padding: 16px 0;
-    margin-bottom: 32px;
-    }
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Saira:wght@500;600;700&family=Spectral:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
 
-
-    .nav {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    gap: 24px;
-    }
-
-
-    .nav a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #000;
-    font-size: 16px;
-    }
-
-
-    .nav a:hover {
-    font-weight: bold;
-    color: #8C1515
-    }
-
-    .container {
-      display: flex;
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-      gap: 40px;
-    }
-
-    /* Left column */
-    .sidebar {
-      width: 250px;
-      flex-shrink: 0;
-    }
-
-    .profile-pic {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%; /* can be 50% for circle*/
-      object-fit: cover;
-      border: 3px solid #8C1515;
-      display: block;
-      margin-bottom: 20px;
-    }
-
-    .sidebar h1 {
-      font-size: 22px;
-      margin: 0 0 10px 0;
-      color: #8C1515;
-    }
-
-    .sidebar p {
-      margin: 4px 0;
-      font-size: 14px;
-    }
-
-    .links {
-      margin-top: 16px;
-    }
-
-    .links a {
-      display: block;
-      text-decoration: none;
-      color: #8C1515;
-      font-size: 14px;
-      margin: 6px 0;
-    }
-
-    .links a:hover {
-      text-decoration: underline;
-    }
-
-    .contact {
-    margin-top: 24px;
-    }
-
-
-    .contact-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: #000;
-    font-size: 15px;
-    margin: 10px 0;
-    }
-
-
-    .contact-item:hover {
-    text-decoration: underline;
-    }
-
-
-    .icon {
-    width: 22px;
-    text-align: center;
-    font-size: 18px;
-    }
-
-    .contact-item i {
-    width: 20px;
-    text-align: center;
-    font-size: 16px;
-    }
-
-
-    /* Right column */
-    .content {
-      flex: 1;
-    }
-
-    .content h2 {
-      color: #8C1515;
-      margin-top: 0;
-      font-size: 24px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid  #8C1515;
-      margin-bottom: 20px;
-    }
-
-    .content h3 {
-      color: #8C1515;
-      margin-top: 0;
-      font-size: 17px;
-      
-    }
-
-    .content p {
-      line-height: 1.6;
-      font-size: 15px;
-    }
-
-    a {
-        color: #8C1515;
-    }
-
-    .project {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 32px;
-  align-items: flex-start;
-}
-
-.project-image {
-  width: 140px;
-  height: auto;
-  border: 1px solid #ddd;
-}
-
-.project-text h3 {
-  margin: 0 0 8px 0;
-  font-size: 18px;
-  color: #8C1515;
-}
-
-.project-text p {
-  margin: 0;
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-    /* Simple responsiveness */
-    @media (max-width: 700px) {
-      .container {
-        flex-direction: column;
-      }
-
-      .sidebar {
-        width: 100%;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="site-header">
-        <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="publications.html">Publications</a>
-        <a href="docs/resume_website.pdf" target="_blank">CV</a>
-        </nav>
-    </header>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="docs/Rudraksh Mohapatra Resume_2026.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+  </header>
+
   <div class="container">
+
     <!-- Left column -->
     <aside class="sidebar">
-      <img src="images/project_symbol.png" alt="Profile photo" class="profile-pic" />
+      <img src="images/project_symbol.png" alt="Rudraksh Mohapatra" class="profile-pic" />
 
       <h1>Rudraksh Mohapatra</h1>
-      <!--<p><strong>University:</strong> Stanford University</p>
-      <p><strong>Major:</strong>Electrical Engineering</p>
-
-       <div class="links">
-        <a href="cv.pdf">Curriculum Vitae</a>
-        <a href="projects.html">Projects</a>
-        <a href="publications.html">Publications</a>
-      </div> -->
 
       <div class="contact">
         <a href="mailto:rudraksh@stanford.edu" class="contact-item">
           <i class="fa-solid fa-envelope"></i>
-          <span>Email</span>
+          <span>rudraksh@stanford.edu</span>
         </a>
-      
-        <a href="https://www.linkedin.com/in/rudraksh-mohapatra" class="contact-item">
+
+        <a href="https://www.linkedin.com/in/rudraksh-mohapatra" class="contact-item" target="_blank" rel="noopener">
           <i class="fa-brands fa-linkedin"></i>
           <span>LinkedIn</span>
         </a>
-      
-        <a href="https://github.com/rudraksh-art" class="contact-item">
+
+        <a href="https://github.com/rudraksh-art" class="contact-item" target="_blank" rel="noopener">
           <i class="fa-brands fa-github"></i>
           <span>GitHub</span>
         </a>
-      
-        <a href="http://scholar.google.com/citations?user=BXS-33QAAAAJ" class="contact-item">
+
+        <a href="http://scholar.google.com/citations?user=BXS-33QAAAAJ" class="contact-item" target="_blank" rel="noopener">
           <i class="fa-solid fa-graduation-cap"></i>
           <span>Google Scholar</span>
         </a>
       </div>
-      
     </aside>
 
     <!-- Right column -->
-    <main class="content">
+    <main class="content" id="main">
+
       <h2>Projects</h2>
-        <div class="project">
-        <img src="images/FloodMAP.png" alt="Project 1 image" class="project-image" />
-      
-        <div class="project-text">
-          <h3>FloodMAP</h3>
-          <p>
-            Built a low power network of sensors that capture hyperlocal weather data. This self sustaining device can aid in green urbanization,
-              infrastructure development and mitigation strategies. Project is currently selected for the Global Finals for the Global Sustainability 
-              Challenge. 
 
-          </p>
-        </div>
-      </div>
       <div class="project">
-        <img src="images/accelerometer.png" alt="Project 1 image" class="project-image" />
-      
-        <div class="project-text">
-          <h3>Capacitive Accelerometer</h3>
-          <p>
-            Built and calibrated a single axis capacitive accelerometer. I assembled the measurement circuitry and experimentally determined the FR4 Spring constant.
-             Validated the accelerometer by testing the Earth’s gravitational field. 
+        <img src="images/EE134.jpg" alt="EE134" class="project-image" />
 
+        <div class="project-text">
+          <h3>Programmable Image Projection Using Custom Diffraction Masks</h3>
+          <h3>2026 Design Award - Stanford EE Department</h3>
+          <p>
+            Designed an optical system that recreates images from their custom diffraction masks. 
+            Diffraction patterns were generated using diffractsim python libraries, and then captured using an ISO 50 35mm film camera. 
+            The results were then visualized using an optical setup to get the required animation. <br>
+            Project was a part of EE 134: Introduction to Photonics, Winter 2026.
           </p>
         </div>
       </div>
       
       <div class="project">
-        <img src="images/wavetable.jpeg" alt="Project 1 image" class="project-image" />
-      
+        <img src="images/EE219.png" alt="3D Liveness" class="project-image" />
+
+        <div class="project-text">
+          <h3>Face Liveness Detection System using 3D Time of Flight Camera:</h3>
+          <h3>EE 219: 3D+ Imaging Sensors</h3>
+          <p>
+            Built a liveness detection system using 3D Time of Flight Camera to distinguish real faces from 2D spoofs. 
+            Utilized near/far mode and FoV of the camera to obtain depth information and histogram data to gather insights on face liveness.
+            Final system managed to accurately classify a face as a real 3d face compared to 2d spoofs. Testing was done by rotating faces, 
+            distorting the 2d spoofs and changing the lighting conditions.
+          </p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="images/EE117.mov" alt="Capacitive accelerometer test setup" class="project-image" />
+
+        <div class="project-text">
+          <h3>Capacitive Touch Sensor</h3>
+          <p>
+            Built and calibrated a capacitive touch sensor. Measured the baselines for the drive and sense lines to detect finger 
+            presence. Localized finger tracking at 15 fps by detecting the amount of pressure based on autocorrelation
+            values of PRBS sequence readings from the drive lines. Also implemented a Kalman filter for tracking the finger's position
+            for smoother movement detection. 
+          </p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="images/EE117_2.png" alt="IMU Dead Reckoning" class="project-image" />
+
+        <div class="project-text">
+          <h3>IMU Dead Reckoning</h3>
+          <p>
+            Built a gravity level measurement using Accelerometer and Gyroscope registers (no fusion libraries). Readings from both the accelerometer and the 
+            gyroscope were combined to account for drift and impulse changes. Calibrated the sensitivity 
+            levels of both to match accuracy in commerical cases (such as those in iPhones). Also applied a Kalman filter for position tracking of target
+            within 6m.
+          </p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="images/wavetable.jpeg" alt="Wavetable synthesizer waveform display" class="project-image" />
+
         <div class="project-text">
           <h3>Wavetable Music Synthesizer</h3>
           <p>
-            Implemented a real-time wavetable audio synthesizer on a PYNQ FPGA using Verilog. 
-            Designed a synchronized waveform visualization system using VGA/HDMI output, that displayed the live wave samples in real time. 
-            Added additional features such as chords, delays, and adjustable display. 
+            Implemented a real-time wavetable audio synthesizer on a PYNQ FPGA using Verilog. Designed a
+            synchronized waveform visualization system using VGA/HDMI output, that displayed the live wave
+            samples in real time. Added additional features such as chords, delays, and adjustable display.
           </p>
         </div>
       </div>
 
       <div class="project">
-        <img src="images/project_symbol.png" alt="Project 1 image" class="project-image" />
-      
+        <img src="images/project_symbol.png" alt="AC to DC converter board" class="project-image" />
+
         <div class="project-text">
           <h3>AC to DC Converter</h3>
           <p>
-            Project involved reading schematics, working on taking measurements of waveforms  using oscilloscopes. 
-            I soldered and assembled the circuit on a PCB, and worked on circuit validation using waveform generators, 
-            oscilloscopes, and software such as LTSpice.  
-
+            Project involved reading schematics and taking measurements of waveforms using oscilloscopes.
+            I soldered and assembled the circuit on a PCB, and worked on circuit validation using waveform
+            generators, oscilloscopes, and software such as LTspice.
           </p>
         </div>
       </div>
-      
+
     </main>
   </div>
+
 </body>
 </html>

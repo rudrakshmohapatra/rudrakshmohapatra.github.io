@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience — Rudraksh Mohapatra</title>
+  <meta name="description" content="Research and industry experience of Rudraksh Mohapatra: synthetic aperture radar backscatter communication, 3D scene reconstruction, and generative design software." />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Saira:wght@500;600;700&family=Spectral:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="experience.html" aria-current="page">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="docs/Rudraksh Mohapatra Resume_2026.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- Left column -->
+    <aside class="sidebar">
+      <img src="images/project_symbol.png" alt="Rudraksh Mohapatra" class="profile-pic" />
+
+      <h1>Rudraksh Mohapatra</h1>
+
+      <div class="contact">
+        <a href="mailto:rudraksh@stanford.edu" class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>rudraksh@stanford.edu</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/rudraksh-mohapatra" class="contact-item" target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+
+        <a href="https://github.com/rudraksh-art" class="contact-item" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+
+        <a href="http://scholar.google.com/citations?user=BXS-33QAAAAJ" class="contact-item" target="_blank" rel="noopener">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Google Scholar</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Right column -->
+    <main class="content" id="main">
+
+      <h2>Experience</h2>
+
+      <!-- ====================================================================
+           ENTRY TEMPLATE — copy this block to add an entry.
+           Every part except .entry-org and the description is optional.
+
+           <article class="entry">
+             <div class="entry-aside">
+               <img src="images/…" alt="…" class="entry-figure" />
+               <p class="entry-meta">
+                 <span>Jun 2025 — Present</span>
+                 <span>Stanford, CA</span>
+               </p>
+             </div>
+             <div class="entry-body">
+               <h3 class="entry-org">Organisation</h3>
+               <p class="entry-role">Specific project or focus</p>
+               <p>Description.</p>
+             </div>
+           </article>
+           ==================================================================== -->
+
+      <article class="entry">
+        <div class="entry-aside">
+          <!-- TODO: this is currently the accelerometer photo from projects.html -->
+          <img src="images/Sarlink.gif" alt="SAR Simulation" class="entry-figure" />
+          <p class="entry-meta">
+            <span>Jun 2025 — Present</span>
+            <span>Stanford, CA</span>
+          </p>
+        </div>
+
+        <div class="entry-body">
+          <h3 class="entry-org">Stanford Smart Sensing Systems Lab</h3>
+          <p class="entry-role">Algorithm Development for Satellite Backscatter Communication</p> --
+          <p>
+            Implemented a signal processing algorithm for passive RF backscatter communication using existing SAR infrastructure.
+            Partitioned the aperture into sublooks to encode bits, performed range/azimuth compression, and computed
+            Signal-to-Clutter Ratio (SCR) per sublook and across sublooks. I also wrote a program to estimate the Radar Cross Section (RCS) 
+            of a point target from L0-RAW SAR data. The results for this were validated with theoretical estimates to within 2 dB.
+            <br> I also simulated the effect of corner reflectors in raw SAR data by modifying the collected I/Q samples with a point target response.
+            This allowed us to generate controlled ground-truth test cases for backscatter experiments without field deployment.  
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-aside">
+          <!-- TODO: this is currently the wavetable photo from projects.html -->
+          <img src="images/navlab.jpg" alt="Gaussian Splatting Scene Segmentation" class="entry-figure" />
+          <p class="entry-meta">
+            <span>Sep 2025 — Present</span>
+            <span>Stanford, CA</span>
+          </p>
+        </div>
+
+        <div class="entry-body">
+          <h3 class="entry-org">Navigation and Autonomous Vehicles Lab</h3>
+          <p class="entry-role">Gaussian Splatting for 3D Scene Reconstruction and Analysis</p>--
+          <p>
+            I developed algorithms to benchmark 3D Gaussian Splatting optimizers to better
+            understand how the software interprets geometry and color in a scene. This allowed me to understand the
+            root causes of issues such as glare, which are a crucial weakness in most 3d reconstructions. <br>
+            Another aspect of my work focused on building scene segmentation technqiues using density based clustering 
+            methods such as DBSCAN, HDBSCAN and OPTICS. The process improved 3D scene segmentation in unstructured environments 
+            and improve artificat detection in low-texture regions. This generalized approach towards scene segmentation was 
+            presented in the context of plant detection for burn piles at Stanford's Jasper Ridge Biological Preserve at the Stanford 
+            and Data Science Conference 2026.
+
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-aside">
+          <!-- TODO: placeholder image -->
+          <img src="images/morphoai.png" alt="MorphoAI" class="entry-figure" />
+          <p class="entry-meta">
+            <span>Jun 2026 — Sep 2026</span>
+            <span>New York, NY</span>
+          </p>
+        </div>
+
+        <div class="entry-body">
+          <h3 class="entry-org">MorphoAI</h3>
+          <p class="entry-role">Sofware Engineering Intern</p> --
+          <p>
+          I built a constrained nonlinear optimizer that deforms 3D solid models to hit exact volume, surface-area, and per-feature
+          dimensional targets while minimizing vertex displacement. The optimizer solved a joint decision vector of mesh vertices and
+          analytic surface parameters with a custom sparse Gauss–Newton KKT solver. <br>
+          I also derived analytic residuals and Jacobians for primitive shapes and NURBS surfaces 
+          and constrained vertices to remain on their parametric surfaces. <br>
+          Finally, shipped STEP round-trip export and demoed to clients. The work was selected for continued development after client meetings.
+          </p>
+        </div>
+      </article>
+
+    </main>
+  </div>
+
+</body>
+</html>
